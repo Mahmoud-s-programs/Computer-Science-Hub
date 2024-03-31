@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials Page</title>
+    <link rel="stylesheet" href="tutorials.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <h1>Tutorials for Computer Science Courses</h1> <!-- Heading -->
+    <!-- Tabs for switching between videos and websites -->
+    <div class="tabs">
+      <button class="tablinks" onclick="openResource(event, 'Videos')">Videos</button>
+      <button class="tablinks" onclick="openResource(event, 'Websites')">Websites</button>
+    </div>
+    <!-- Container for videos -->
+    <div id="Videos" class="tabcontent">
+        <!-- Embedding videos from YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A9sezRxNhWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eHZifpgyH_4&t=3987s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CgkZ7MvWUAA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZdHfJVAY-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2hMrk7A8Wf0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5kJv254sebQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+    </div>
+    <!-- Container for website tutorials -->
+    <div id="Websites" class="tabcontent">
+        <ul>
+            <!-- List of tutorial links -->
+            <li>
+              <h3>Introduction to Programming</h3>
+              <p>Learn the basics of programming with this comprehensive guide.</p>
+              <a href="https://www.educative.io/answers/what-are-the-basic-fundamental-concepts-of-programming" target="_blank">Visit Tutorial</a>
+            </li>
+            <li>
+              <h3>Web Development Fundamentals</h3>
+              <p>A beginner's guide to understanding web technologies and building your first website.</p>
+              <a href="https://brainstation.io/career-guides/how-to-become-a-web-developer#:~:text=To%20become%20a%20Web%20Developer%2C%20you%20should%20have%20an%20understanding,for%20communicating%20with%20programming%20languages." target="_blank">Visit Tutorial</a>
+            </li>
+            <li>
+                <h3>OOP Using Java</h3>
+                <p>A beginner's guide to understanding the basic foundementals of OOP using Java.</p>
+                <a href="https://www.w3schools.com/java/java_oop.asp" target="_blank">Visit Tutorial</a>
+              </li>
+              <li>
+                <h3>Computer Networks</h3>
+                <p>An easy to follow guide that will help you get an understanding of how computer networks actually work.</p>
+                <a href="https://www.geeksforgeeks.org/basics-computer-networking/" target="_blank">Visit Tutorial</a>
+              </li>
+              <li>
+                <h3>React</h3>
+                <p>A beginner's guide to understanding the React framework and building your first website using this framework.</p>
+                <a href="https://react.dev/learn" target="_blank">Visit Tutorial</a>
+              </li>
+          </ul>
+    </div>
+</body>
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+</html>

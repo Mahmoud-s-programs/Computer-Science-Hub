@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Set character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Set viewport for responsive design -->
+  <title>Contact Us</title> <!-- Page title -->
+  <link rel="stylesheet" href="contact.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <h1>Contact Us</h1> <!-- Heading -->
+  <form id="contactForm" action="process_form.php" method="post"> <!-- Form for contact -->
+    <label for="name">Name:</label> <!-- Name input field -->
+    <input type="text" id="name" name="name" required> <!-- Name input -->
+
+    <label for="email">Email:</label> <!-- Email input field -->
+    <input type="email" id="email" name="email" required> <!-- Email input -->
+
+    <label for="message">Message:</label> <!-- Message input field -->
+    <textarea id="message" name="message" rows="4" required></textarea> <!-- Message textarea -->
+
+    <button type="submit">Submit</button> <!-- Submit button -->
+  </form>
+
+  <div id="feedback"></div> <!-- Feedback section -->
+
+  <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

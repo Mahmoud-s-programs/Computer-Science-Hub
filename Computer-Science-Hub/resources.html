@@ -1,0 +1,117 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Set character encoding -->
+  <title>Student Resources Page</title> <!-- Page title -->
+  <link rel="stylesheet" href="resources.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <h1>Upload Course Materials</h1> <!-- Heading -->
+  <form action="upload.php" method="post" enctype="multipart/form-data"> <!-- Form for uploading files -->
+    Select file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload" /> <!-- File input -->
+    <input type="submit" value="Upload File" name="submit" /> <!-- Submit button -->
+  </form>
+  <div class="uploads"> <!-- Uploads section -->
+    <a href="list_files.php">View Uploaded Files</a> <!-- Link to view uploaded files -->
+  </div>
+  <div class="resources-container"> <!-- Resource container -->
+    <div class="resource"> <!-- Resource item -->
+      <h2>An Open Guide to Data Structures and Algorithms</h2> <!-- Heading -->
+      <p>
+        This textbook serves as a gentle introduction for undergraduates to
+        theoretical concepts in data structures and algorithms in computer
+        science while providing coverage of practical implementation (coding)
+        issues.
+      </p> <!-- Description -->
+        <a
+          href="https://freecomputerbooks.com/An-Open-Guide-to-Data-Structures-and-Algorithms.html"
+          target="_blank"
+          >Download</a
+        >
+      </div>
+      <div class="resource">
+        <h2>Algorithm Design</h2>
+        <p>
+          This book introduces algorithms by looking at the real-world problems
+          that motivate them. The book teaches a range of design and analysis
+          techniques for problems that arise in computing applications.
+        </p>
+        <a
+          href="https://freecomputerbooks.com/Algorithm-Design-by-Jon-Kleinberg.html"
+          target="_blank"
+          >Download</a
+        >
+      </div>
+      <div class="resource">
+        <h2>Practical Web Development</h2>
+        <p>
+          This book is perfect for beginners who want to get started and learn
+          the web development basics, but also offers experienced developers a
+          web development roadmap that will help them to extend their
+          capabilities.
+        </p>
+        <a
+          href="https://freecomputerbooks.com/Practical-Web-Development.html"
+          target="_blank"
+          >Download</a
+        >
+      </div>
+      <div class="resource">
+        <h2>
+          Scientists deliver quantum algorithm to develop new materials and
+          chemistry
+        </h2>
+        <p>
+          U.S. Naval Research Laboratory (NRL) scientists published the Cascaded
+          Variational Quantum Eigensolver (CVQE) algorithm in a recent Physical
+          Review Research article, expected to become a powerful tool to
+          investigate the physical properties in electronic systems.
+        </p>
+        <a
+          href="https://www.sciencedaily.com/releases/2024/03/240325135059.htm"
+          target="_blank"
+          >Read More</a
+        >
+      </div>
+      <div class="resource">
+        <h2>AI ethics are ignoring children, say researchers</h2>
+        <p>
+          Researchers have called for a more considered approach when embedding
+          ethical principles in the development and governance of AI for
+          children.
+        </p>
+        <a
+          href="https://www.sciencedaily.com/releases/2024/03/240320122433.htm"
+          target="_blank"
+          >Read More</a
+        >
+      </div>
+      <div class="resource">
+        <h2>Future AI algorithms have potential to learn like humans</h2>
+        <p>
+          Memories can be as tricky to hold onto for machines as they can be for
+          humans. To help understand why artificial agents develop holes in
+          their own cognitive processes, electrical engineers have analyzed how
+          much a process called 'continual learning' impacts their overall
+          performance.
+        </p>
+        <a
+          href="https://www.sciencedaily.com/releases/2023/07/230720124956.htm"
+          target="_blank"
+          >Download</a
+        >
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileName = urlParams.get("file");
+        if (fileName) {
+          const filePath = "uploads/" + fileName;
+          document.body.innerHTML += `<iframe src="${filePath}" width="100%" height="600px"></iframe>`;
+        }
+      });
+    </script>
+  </body>
+</html>

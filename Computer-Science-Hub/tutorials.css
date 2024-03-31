@@ -1,0 +1,95 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif; /* Font family */
+  margin: 0; /* Margin */
+  padding: 20px; /* Padding */
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); /* Background gradient */
+}
+
+/* Heading styles */
+h1 {
+  color: hsl(294, 90%, 4%); /* Heading color */
+}
+
+/* Tabs container styles */
+.tabs {
+  overflow: hidden; /* Overflow hidden */
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); /* Background gradient */
+  border-radius: 5px; /* Border radius */
+  margin-bottom: 20px; /* Margin bottom */
+  color: #ffd3f8; /* Text color */
+}
+
+/* Tab links styles */
+.tablinks {
+  float: left; /* Float left */
+  cursor: pointer; /* Pointer cursor */
+  padding: 14px 16px; /* Padding */
+  transition: 0.3s; /* Transition */
+  font-size: 17px; /* Font size */
+  border: none; /* No border */
+  outline: none; /* No outline */
+  background-color: inherit; /* Inherit background color */
+}
+
+.tablinks:hover,
+.tablinks.active {
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%); /* Background gradient */
+  color: rgb(47, 6, 41); /* Text color */
+}
+
+/* Tab content styles */
+.tabcontent {
+  display: none; /* Hide by default */
+  padding: 20px; /* Padding */
+  border: 1px solid #464745; /* Border */
+  border-top: none; /* No top border */
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); /* Background gradient */
+  border-radius: 0px 0px 5px 5px; /* Border radius */
+}
+
+/* Websites list styles */
+#Websites ul {
+  list-style-type: none; /* No list style */
+  padding: 0; /* Padding */
+}
+
+#Websites li {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); /* Background gradient */
+  margin-bottom: 15px; /* Margin bottom */
+  padding: 20px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+#Websites h3 {
+  margin-top: 0; /* Margin top */
+  color: #333; /* Text color */
+}
+
+#Websites p {
+  margin: 10px 0; /* Margin */
+  line-height: 1.6; /* Line height */
+}
+
+#Websites a {
+  display: inline-block; /* Display inline-block */
+  background-color: #4b034b; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 15px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  text-decoration: none; /* No text decoration */
+  transition: background-color 0.3s ease; /* Transition */
+}
+
+#Websites a:hover {
+  background-color: #eca0ff; /* Background color on hover */
+}
+
+/* Media query for navigation on small screens */
+@media (max-width: 600px) {
+  header nav ul li {
+    display: block; /* Display block */
+    margin-right: 0; /* Remove right margin */
+  }
+}
