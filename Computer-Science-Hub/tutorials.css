@@ -5,7 +5,26 @@ body {
   padding: 20px; /* Padding */
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); /* Background gradient */
 }
+/* Navigation styles */
+header nav ul {
+  list-style: none; /* Remove default list style */
+  background-color: #00DBDE; /* Background color */
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); /* Background gradient */
+  text-align: center; /* Center align text */
+  padding: 0; /* Padding */
+  margin: 0; /* Margin */
+}
 
+header nav ul li {
+  display: inline; /* Display inline */
+  margin-right: 20px; /* Right margin */
+}
+
+header nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #000000; /* Text color */
+  padding: 15px; /* Padding */
+}
 /* Heading styles */
 h1 {
   color: hsl(294, 90%, 4%); /* Heading color */
